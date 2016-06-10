@@ -1,0 +1,72 @@
+
+
+
+<!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" onload="cargar()">
+
+ <div id="res"> </div>
+
+
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel" style="color:red"><span class="glyphicon glyphicon-lock"></span> inicio de sesion</h4>
+        </div>
+
+        <div class="modal-body">
+
+
+
+        <form class="form-horizontal" role="form"  onkeypress="return scriptlogin(event)">
+         
+     
+      <div class="form-group">
+      <label for="ejemplo_password_3" class="col-lg-2 control-label"><span class="glyphicon glyphicon-user"></span> Usuario O Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="usuario_login" 
+               placeholder="Usuario">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="ejemplo_password_3" class="col-lg-2 control-label"><span class="glyphicon glyphicon-lock"></span> Contraseña</label>
+      <div class="col-lg-10">
+        <input type="password" class="form-control" id="pass_login" 
+               placeholder="Contraseña">
+      </div>
+    </div>
+
+
+    <div class="checkbox">
+      <label><input type="checkbox"  value="1"   id="sesion_login" checked>recordarme</label>
+
+  
+
+    <button type="button" class="btn btn-default btn-success btn-block" onclick="gologin();"><span class="glyphicon glyphicon-off" onclick="gologin();"></span> iniciar sesion</button>
+    
+   </div>
+    
+  </form>
+        </div>
+
+     
+ 
+
+        <div class="modal-footer">
+         <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+         <p>¿No estás registrado? <a data-toggle="modal" data-target="#Registro">Registrate!</a></p>
+         <p>Contraseña <a data-toggle="modal" data-target="#Lostpass">perdida?</a></p>
+       </div>
+       <div id="muestra"> </div>
+     </div>
+   </div>
+
+
+ </div>
+
+ <script src="vistas/app/js/login.js"></script>
